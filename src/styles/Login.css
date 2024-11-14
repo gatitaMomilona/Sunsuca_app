@@ -1,0 +1,76 @@
+/* Estilo general para el contenedor de login */
+.login-container {
+  min-width: 500px;
+  margin: 30px;
+  padding: 30px;
+  background-color: #a4d555;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-self: center;
+}
+
+/* Título del formulario */
+.login-container h2 {
+  font-size: 2rem;
+  color: #004d4d; /* Verde corporativo */
+  margin-bottom: 20px;
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Estilos para las etiquetas de los campos */
+.form-group label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3e4e50;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Cambios de borde cuando el campo está en foco */
+input:focus {
+  border-color: #004d4d;
+  outline: none;
+}
+
+/* Estilo para el botón de inicio de sesión */
+.submit-button {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: #004d4d; /* Verde corporativo */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Cambio de color y efecto de escala al pasar el ratón */
+.submit-button:hover {
+  background-color: #3e4e50; /* Color oscuro */
+  transform: scale(1.05);
+}
+
+/* Estilo para mensajes de error */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
