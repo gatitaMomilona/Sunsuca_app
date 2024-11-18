@@ -2,11 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './styles/App.css';
 
-import Services from './pages/Services';
+import Catalogo from './pages/Catalogo';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
-import LogoSunsuca from './img/Captura de pantalla 2024-11-14 085038.png'; // Asegúrate de que la ruta sea correcta
+import Admin from './pages/Admin'; 
+import Client from './pages/Client';  // Importa el componente del cliente
+
+import LogoSunsuca from './img/Captura de pantalla 2024-11-14 085038.png';
 
 function App() {
   return (
@@ -17,19 +20,21 @@ function App() {
           <img src={LogoSunsuca} alt="Sembrado Ecológico" className="logo" />
           <nav className="nav">
             <Link to="/" className="nav-link">Inicio</Link>
-            <Link to="/services" className="nav-link">Servicios</Link>
+            <Link to="/catalogo" className="nav-link">Catálogo</Link>
             <Link to="/gallery" className="nav-link">Galería</Link>
             <Link to="/contact" className="nav-link">Contacto</Link>
-            <Link to="/login" className="nav-link">Admin</Link>
+            <Link to="/login" className="nav-link">Inicio Sesión</Link>
           </nav>
         </header>
 
         <Routes>
           <Route path="/" element={<HomeContent />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/catalogo" element={<Catalogo />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/client" element={<Client />} /> {/* Ruta para cliente */}
         </Routes>
 
         <footer className="footer">
@@ -81,5 +86,6 @@ function HomeContent() {
     </section>
   );
 }
+
 
 export default App;

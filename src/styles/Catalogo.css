@@ -1,0 +1,62 @@
+/* Estilos para el catálogo */
+.catalogo-container {
+  padding: 40px 20px;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+.catalogo-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #4caf50;
+  margin-bottom: 30px;
+}
+
+.catalogo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.catalogo-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogo-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.catalogo-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.catalogo-card-title {
+  font-size: 1.5rem;
+  margin: 15px 10px 10px;
+  color: #4caf50;
+  text-align: center;
+}
+
+.catalogo-card-description {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .catalogo-card-title {
+    font-size: 1.2rem;
+  }
+  .catalogo-card-description {
+    font-size: 0.9rem;
+  }
+}

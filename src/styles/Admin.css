@@ -1,0 +1,83 @@
+.admin-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2C3E50;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 24px;
+  color: #2980B9;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input-group input, .input-group textarea {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #BDC3C7;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.input-group button {
+  padding: 8px 16px;
+  background-color: #2980B9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.input-group button:hover {
+  background-color: #3498DB;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.event-item, .appointment-item {
+  background-color: #ECF0F1;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.event-item h3, .appointment-item h3 {
+  color: #2980B9;
+}
+
+.event-item p, .appointment-item p {
+  font-size: 14px;
+}
+
+.delete-btn {
+  background-color: #E74C3C;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: #C0392B;
+}
